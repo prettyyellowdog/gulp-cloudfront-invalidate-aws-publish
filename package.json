@@ -1,11 +1,21 @@
 {
   "name": "gulp-cloudfront-invalidate-aws-publish",
-  "version": "1.0.0",
-  "author": "Lee Pender <lpender@gmail.com> (http://lpender.github.com)",
+  "version": "1.1.0",
+  "authors": [
+    {
+      "name": "Lee Pender",
+      "email": "lpender@gmail.com",
+      "url": "https://github.com/lpender"
+    },
+    {
+      "name": "Bill Jones",
+      "url": "https://github.com/prettyyellowdog"
+    }
+  ],
   "description": "Invalidates paths published with gulp-awspublish",
-  "homepage": "https://github.com/lpender/gulp-cloudfront-invalidate-aws-publish",
+  "homepage": "https://github.com/prettyyellowdog/gulp-cloudfront-invalidate-aws-publish",
   "main": "index.js",
-  "repository": "lpender/gulp-cloudfront-invalidate-aws-publish",
+  "repository": "prettyyellowdog/gulp-cloudfront-invalidate-aws-publish",
   "keywords": [
     "gulp",
     "cloudfront",
@@ -15,17 +25,20 @@
     "invalidation"
   ],
   "dependencies": {
-    "aws-sdk": "^2.1.16",
-    "fancy-log": "1.3.x",
-    "plugin-error": "1.0.x",
-    "through2": "2.0.x"
+    "@aws-sdk/client-cloudfront": "^3.812.0",
+    "fancy-log": "^2.0.0",
+    "plugin-error": "^2.0.1",
+    "through2": "^4.0.2"
   },
   "bugs": {
-    "url": "https://github.com/lpender/gulp-cloudfront-invalidate-aws-publish/issues"
+    "url": "https://github.com/prettyyellowdog/gulp-cloudfront-invalidate-aws-publish/issues"
   },
   "licenses": [
     {
       "type": "MIT"
     }
-  ]
+  ],
+    "prettier": {
+    "singleQuote": true
+  }
 }
